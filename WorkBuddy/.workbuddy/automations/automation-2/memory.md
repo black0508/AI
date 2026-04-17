@@ -15,12 +15,16 @@
 - Lua 语言深入（元表 __index/__newindex/__call 与脏标记、OOP 继承原型链、协程消灭回调地狱、Lua-C++ 交互瓶颈分析/腾讯面试优化方案、GC 调优三策略、LuaJIT FFI/table优化、内存泄漏排查四板斧）
 - 信息来源：Epic 官方文档、UWA 侑虎科技、Hika/Lynx 博客、GDC 2016-2024、Lua 官方 Performance Tips、Luau 性能文档、腾讯面试题解析、Defold 社区、Animancer 作者分享
 
+### 第 5 期（2026-04-17 下午）
+- UI 架构设计（MVC vs MVVM 对比、BindableProperty 数据绑定、UE5 UMVVMViewModelBase、Lua 元表绑定、UIManager 栈式管理、绑定泄漏防护、脏标记批量刷新）
+
 ## 待覆盖主题（未来计划）
 - 网络同步（状态同步 vs 帧同步、UE Replication、RPC 机制）
 - 游戏 AI（行为树、EQS、GOAP、FSM/HFSM）
 - 内存管理与性能优化（UE GC、Unity GC、对象池、Profiling 方法论）
 - Shader 编程（HLSL/GLSL、PBR 光照模型、常见效果实现）
-- UI 系统（UMG/Slate vs UGUI/UI Toolkit、MVC/MVVM 架构）
+
+
 - 物理系统（PhysX、碰撞检测优化、物理同步）
 - 资源管理（AssetManager、Addressables、热更新）
 - C# 核心（GC 机制、值类型 vs 引用类型、async/await、Span<T>）
