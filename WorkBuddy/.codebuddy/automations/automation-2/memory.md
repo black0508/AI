@@ -48,6 +48,36 @@
 - **本期思考题**: 帧同步观战模式的追帧方案（关键帧快照 + 增量追帧）
 - **下期建议主题**: Lua 语言深入（元表、闭包与 upvalue）
 
+### 2026-04-21 17:00 (第7期 · 下午，单主题精简版)
+- **主题**: Lua 语言深入（元表 metatable、__index 继承链、闭包与 upvalue、内存泄漏防范）
+- **难度**: ⭐⭐ 中级
+- **文件**: `游戏客户端面经_20260421_下午.md`
+- **语言覆盖**: 纯 Lua（深度专题）
+- **篇幅**: 约 12-15 分钟阅读量
+- **上期思考题**: 已回答（帧同步观战追帧：关键帧快照 + 增量追帧 + 跳过渲染）
+- **本期思考题**: 配置表默认值方案（__index 指向默认值表，只存差异字段）
+- **下期建议主题**: 动画系统（UE5 动画蓝图 vs Unity Animator）
+
+### 2026-04-22 10:30 (第8期 · 上午，单主题精简版)
+- **主题**: 动画系统（UE5 动画蓝图 vs Unity Animator、Montage 机制、Playable API、Root Motion、Anim Notify）
+- **难度**: ⭐⭐ 中级
+- **文件**: `游戏客户端面经_20260422_上午.md`
+- **引擎覆盖**: UE5 C++ + Unity C#（跨引擎对比）
+- **篇幅**: 约 12-15 分钟阅读量
+- **上期思考题**: 已回答（Lua 元表配置表默认值方案：__index 回落 + NULL_MARK 标记 + freeze 保护）
+- **本期思考题**: 动画优先级系统设计（Combo 窗口 vs 技能打断，UE5 Montage 方案 vs Unity Playable 方案）
+- **下期建议主题**: 内存管理（UE GC 与智能指针 vs Unity GC 与分配策略）
+
+### 2026-04-23 10:30 (第9期 · 上午，单主题精简版)
+- **主题**: 内存管理（UE GC 标记-清除 + TSharedPtr/TWeakObjectPtr vs Unity Boehm GC + GC Alloc 优化 + 对象池 + Lua 内存注意点）
+- **难度**: ⭐⭐ 中级
+- **文件**: `游戏客户端面经_20260423_上午.md`
+- **引擎覆盖**: UE5 C++ + Unity C# + Lua（三语言对比）
+- **篇幅**: 约 12-15 分钟阅读量
+- **上期思考题**: 已回答（动画优先级系统：优先级枚举 + 打断规则 + Combo 窗口特殊处理）
+- **本期思考题**: 开放世界资源引用计数 + 延迟卸载方案（避免加载/卸载抖动）
+- **下期建议主题**: 资源管理（UE AssetManager vs Unity Addressables）
+
 ## 已覆盖主题清单
 
 ### 【工程与工具篇】
@@ -64,7 +94,7 @@
 ### 【编程语言与底层篇】
 - [x] C++ 核心（智能指针、移动语义、所有权模型）— C++ + UE4 TSharedPtr + C# + Lua 跨语言对比
 - [ ] C# 核心
-- [ ] Lua 语言深入
+- [x] Lua 语言深入（元表 metatable、__index 继承链、闭包与 upvalue、__newindex 数据监听、内存泄漏防范）— 纯 Lua 深度专题
 - [ ] 跨语言交互
 
 ### 【渲染与图形篇】
@@ -80,13 +110,13 @@
 - [ ] 服务端基础交互
 
 ### 【内存与性能篇】
-- [ ] 内存管理
+- [x] 内存管理（UE GC 标记-清除 + TSharedPtr/TWeakPtr/TWeakObjectPtr、Unity Boehm GC + GC Alloc 优化、对象池、Lua GC 注意点）— UE5 C++ + Unity C# + Lua
 - [ ] 性能优化方法论
 - [ ] 资源管理
 - [ ] 加载优化
 
 ### 【动画与物理篇】
-- [ ] 动画系统
+- [x] 动画系统（UE5 AnimBP/Montage/Root Motion vs Unity Animator/Playable API、Anim Notify、Combo 系统）— UE5 C++ + Unity C#
 - [ ] 高级动画技术
 - [ ] 物理系统
 
