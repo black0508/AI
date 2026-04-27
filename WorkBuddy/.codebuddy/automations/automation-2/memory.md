@@ -88,6 +88,16 @@
 - **本期思考题**: 开放世界 Pop-in 缓解方案（LOD 策略、预加载距离、优先级调度、视觉过渡）
 - **下期建议主题**: 跨语言交互（C++/Lua 绑定 UnLua/tolua、热更新架构）
 
+### 2026-04-27 19:35 (第11期 · 晚间，单主题精简版)
+- **主题**: 跨语言交互（UnLua 绑定原理/ProcessEvent 调用链、xlua Wrap 代码生成、HybridCLR AOT+Interpreter 混合模式、热更新边界划分）
+- **难度**: ⭐⭐ 中级
+- **文件**: `游戏客户端面经_20260427_晚间.md`
+- **引擎覆盖**: UE5 C++ + Unity C# + Lua（三语言对比）
+- **篇幅**: 约 12-15 分钟阅读量
+- **上期思考题**: 已回答（Pop-in 缓解四板斧：预加载预测 + LOD CrossFade + 优先级调度 + Impostor/HLOD）
+- **本期思考题**: 跨语言悬空引用防护机制设计（Lua 侧 UObject 引用方式 + C++ 弱引用回调 + 防御性检查）
+- **下期建议主题**: Shader 编程实战（HLSL/GLSL 基础、UE 材质系统 vs Unity ShaderLab）
+
 ## 已覆盖主题清单
 
 ### 【工程与工具篇】
@@ -105,7 +115,7 @@
 - [x] C++ 核心（智能指针、移动语义、所有权模型）— C++ + UE4 TSharedPtr + C# + Lua 跨语言对比
 - [ ] C# 核心
 - [x] Lua 语言深入（元表 metatable、__index 继承链、闭包与 upvalue、__newindex 数据监听、内存泄漏防范）— 纯 Lua 深度专题
-- [ ] 跨语言交互
+- [x] 跨语言交互（UnLua 绑定原理/ProcessEvent、xlua Wrap 代码生成、HybridCLR AOT+Interpreter、热更新边界划分）— UE5 C++ + Unity C# + Lua
 
 ### 【渲染与图形篇】
 - [x] 渲染管线（前向/延迟渲染、G-Buffer、Draw Call 优化、Nanite、URP/HDRP/SRP Batcher）— UE5 + Unity 跨引擎对比
