@@ -78,6 +78,16 @@
 - **本期思考题**: 开放世界资源引用计数 + 延迟卸载方案（避免加载/卸载抖动）
 - **下期建议主题**: 资源管理（UE AssetManager vs Unity Addressables）
 
+### 2026-04-24 10:30 (第10期 · 上午，单主题精简版)
+- **主题**: 资源管理（UE5 AssetManager 软引用/异步加载/StreamableManager vs Unity Addressables 引用计数/Bundle 分包、Lua 层资源管理封装）
+- **难度**: ⭐⭐ 中级
+- **文件**: `游戏客户端面经_20260424_上午.md`
+- **引擎覆盖**: UE5 C++ + Unity C# + Lua（三语言对比）
+- **篇幅**: 约 12-15 分钟阅读量
+- **上期思考题**: 已回答（开放世界资源引用计数 + 延迟卸载方案：冷却队列 + 距离预测 + LRU 兜底）
+- **本期思考题**: 开放世界 Pop-in 缓解方案（LOD 策略、预加载距离、优先级调度、视觉过渡）
+- **下期建议主题**: 跨语言交互（C++/Lua 绑定 UnLua/tolua、热更新架构）
+
 ## 已覆盖主题清单
 
 ### 【工程与工具篇】
@@ -112,7 +122,7 @@
 ### 【内存与性能篇】
 - [x] 内存管理（UE GC 标记-清除 + TSharedPtr/TWeakPtr/TWeakObjectPtr、Unity Boehm GC + GC Alloc 优化、对象池、Lua GC 注意点）— UE5 C++ + Unity C# + Lua
 - [ ] 性能优化方法论
-- [ ] 资源管理
+- [x] 资源管理（UE5 AssetManager 软引用/异步加载 vs Unity Addressables 引用计数/Bundle 分包 + Lua 层封装）— UE5 C++ + Unity C# + Lua
 - [ ] 加载优化
 
 ### 【动画与物理篇】
