@@ -98,6 +98,36 @@
 - **本期思考题**: 跨语言悬空引用防护机制设计（Lua 侧 UObject 引用方式 + C++ 弱引用回调 + 防御性检查）
 - **下期建议主题**: Shader 编程实战（HLSL/GLSL 基础、UE 材质系统 vs Unity ShaderLab）
 
+### 2026-04-28 10:30 (第12期 · 上午，单主题精简版)
+- **主题**: Shader 编程实战（变体管理 multi_compile vs shader_feature、UE5 材质系统 vs Unity ShaderLab、溶解效果实现、PSO Caching、变体预热）
+- **难度**: ⭐⭐ 中级
+- **文件**: `游戏客户端面经_20260428_上午.md`
+- **引擎覆盖**: UE5 HLSL + Unity ShaderLab/C# + Lua（三引擎/语言对比）
+- **篇幅**: 约 12-15 分钟阅读量
+- **上期思考题**: 已回答（跨语言悬空引用防护：Proxy 代理模式 + BeginDestroy 回调 + ProcessEvent 入口检查三道防线）
+- **本期思考题**: 天气系统影响角色材质方案（MPC 全局参数 + keyword 策略 + 顶点着色器积雪）
+- **下期建议主题**: 物理系统实战（碰撞检测优化、射线检测、物理模拟同步）
+
+### 2026-04-29 10:30 (第13期 · 上午，单主题精简版)
+- **主题**: 物理系统实战（碰撞检测三阶段、射线检测 API 对比、扇形 AOE 检测优化、Chaos vs PhysX、异步射线批量查询）
+- **难度**: ⭐⭐ 中级
+- **文件**: `游戏客户端面经_20260429_上午.md`
+- **引擎覆盖**: UE5 C++ + Unity C# + Lua（三语言对比）
+- **篇幅**: 约 12-15 分钟阅读量
+- **上期思考题**: 已回答（天气影响角色材质：MPC 全局参数 + 材质内响应 + LOD 分级策略）
+- **本期思考题**: 开放世界 500+ 可交互物件的附近检测系统设计（Tick vs Trigger vs 空间分区）
+- **下期建议主题**: C# 核心（GC 机制、值类型 vs 引用类型、Span<T> 性能优化）
+
+### 2026-04-30 10:30 (第14期 · 上午，单主题精简版)
+- **主题**: C# 核心（值类型 vs 引用类型、装箱陷阱、Span<T> + stackalloc 零分配优化、ArrayPool、readonly struct）
+- **难度**: ⭐⭐ 中级
+- **文件**: `游戏客户端面经_20260430_上午.md`
+- **引擎覆盖**: Unity C# 为主 + UE5 C++ + Lua（三语言对比）
+- **篇幅**: 约 12-15 分钟阅读量
+- **上期思考题**: 已回答（500+ 可交互物件附近检测：空间哈希粗筛 + 距离分帧精筛 + 高优先 Trigger 兜底）
+- **本期思考题**: MMORPG Buff 属性计算零 GC 方案（struct 数组 + 枚举索引 + 脏标记缓存）
+- **下期建议主题**: 游戏玩法系统（技能系统 GAS / Buff 系统设计）
+
 ## 已覆盖主题清单
 
 ### 【工程与工具篇】
@@ -113,13 +143,13 @@
 
 ### 【编程语言与底层篇】
 - [x] C++ 核心（智能指针、移动语义、所有权模型）— C++ + UE4 TSharedPtr + C# + Lua 跨语言对比
-- [ ] C# 核心
+- [x] C# 核心（值类型 vs 引用类型、装箱陷阱、Span<T> + stackalloc 零分配、ArrayPool、readonly struct）— Unity C# 为主 + UE5 C++ + Lua
 - [x] Lua 语言深入（元表 metatable、__index 继承链、闭包与 upvalue、__newindex 数据监听、内存泄漏防范）— 纯 Lua 深度专题
 - [x] 跨语言交互（UnLua 绑定原理/ProcessEvent、xlua Wrap 代码生成、HybridCLR AOT+Interpreter、热更新边界划分）— UE5 C++ + Unity C# + Lua
 
 ### 【渲染与图形篇】
 - [x] 渲染管线（前向/延迟渲染、G-Buffer、Draw Call 优化、Nanite、URP/HDRP/SRP Batcher）— UE5 + Unity 跨引擎对比
-- [ ] Shader 编程
+- [x] Shader 编程（变体管理 multi_compile vs shader_feature、UE5 材质/PSO Caching、Unity ShaderVariantCollection/IPreprocessShaders、溶解效果、移动端优化）
 - [ ] GPU 编程与优化
 - [ ] 图形学基础
 
@@ -138,7 +168,7 @@
 ### 【动画与物理篇】
 - [x] 动画系统（UE5 AnimBP/Montage/Root Motion vs Unity Animator/Playable API、Anim Notify、Combo 系统）— UE5 C++ + Unity C#
 - [ ] 高级动画技术
-- [ ] 物理系统
+- [x] 物理系统（碰撞检测三阶段、射线检测 API、扇形 AOE 优化、Chaos vs PhysX、异步射线）— UE5 C++ + Unity C# + Lua
 
 ### 【UI 系统篇】
 - [ ] UE UI 开发
